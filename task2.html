@@ -1,0 +1,31 @@
+<!-- task2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quest - Task 2</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        #hint { display: none; margin-top: 20px; font-weight: bold; color: rgb(248, 47, 2); }
+        #answer { padding: 10px; border: 2px solid; border-radius: 10px;}
+    </style>
+</head>
+<body>
+    <h2>Math Quest - Task 2</h2>
+    <p>Solve the problem: What is 5x−3=2x+6?</p>
+    <input type="text" id="answer" placeholder="Enter your answer">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="hint">Correct! The next QR code is under the whiteboard.</p>
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value;
+            if (answer == "3") { // Correct answer
+                document.getElementById("hint").style.display = "block";
+            } else {
+                alert("Incorrect! Try again.");
+            }
+        }
+    </script>
+</body>
+</html>
