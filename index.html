@@ -13,14 +13,14 @@
 </head>
 <body>
     <h2>Math Quest - Task 2</h2>
-    <p>Solve the problem: What is 5x−3=2x+6?</p>
+    <p>Solve the problem: What is 2x+11-x=13?</p>
     <input type="text" id="answer" placeholder="Enter your answer">
     <button onclick="checkAnswer()">Submit</button>
-    <p id="hint">Correct! The next QR code is under the whiteboard.</p>
+    <p id="hint">Туура! Кийинки QR code 101-кабинетте .</p>
     <script>
         function checkAnswer() {
             var answer = document.getElementById("answer").value;
-            if (answer == "3") { // Correct answer
+            if (answer == "2") { // Correct answer
                 document.getElementById("hint").style.display = "block";
             } else {
                 alert("Incorrect! Try again.");
